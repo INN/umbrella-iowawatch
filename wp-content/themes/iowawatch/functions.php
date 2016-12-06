@@ -13,6 +13,7 @@ if ( ! defined( 'INN_HOSTED' ) ) {
 }
 
 // shortcodes in text widgets
-add_filter( 'widget_text', 'shortcode_unautop', 9 );
-add_filter( 'widget_text', 'autoembed', 9 );
-add_filter( 'widget_text', 'do_shortcode', 9 );
+global $wp_embed;
+add_filter( 'widget_text', 'shortcode_unautop', 8 );
+add_filter( 'widget_text', array( $wp_embed, 'autoembed'), 8 );
+add_filter( 'widget_text', 'do_shortcode', 8 );
