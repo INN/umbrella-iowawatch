@@ -1,6 +1,6 @@
 <?php
 /**
- * Child theme functions for Iowa Watch
+ * Functions for the Iowa Caucus site child theme
  */
 
 // This site is an INN Member
