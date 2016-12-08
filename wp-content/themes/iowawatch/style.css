@@ -9,3 +9,6 @@ Version:        0.2
 */
 
 #main iframe{ max-width: 100%; }
+.textwidget iframe[src*=soundcloud] {
+  max-height: 180px;
+}
